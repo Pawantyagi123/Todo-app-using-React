@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url("/src/assets/Todo.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+ width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo h1{
+  padding-bottom: 20px;
+}
+.todo {
+  background-color: rgba(255, 255, 255, 0.349);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+   padding: 2rem;
+  
+}
+
+.Add{
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.Add:hover{
+  border: 3px solid rgb(49, 74, 216);
+}
+input {
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(25, 23, 23, 0.847);
+  color: white;
+  font-size: 15px;
+}
+hr {
+  width: 300px;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+ ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    width: 100%;
+    
+ }
+
+ .btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+ }
+
+
+ul button{
+    background-color: red;
+    border: none;
+    padding: 0.8rem 1rem;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+
+h3{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.done{
+  background-color: blue;
+}
+
+.done:hover{
+  border: 2px solid blueviolet;
+}
+
+@media(max-width:380px){
+ul button{
+  font-size: 10px;
+  padding: 0.5 1rem;
+}
+.todo{
+  padding: 1rem;
+  width: 90%;
+}
+ul{
+  width: 100%;
+}
+}
