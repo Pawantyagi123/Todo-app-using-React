@@ -10,12 +10,12 @@ export default function TodoList(){
      setTodos((prevTodo) => {
         return [...prevTodo,{Task: newtodo, id:uuidv4(), isDone: false}]
      })
-    
+     setnewtodo("");
     };
 
     let  updateTask = (event) =>{
+        event.preventDefault();
         setnewtodo(event.target.value)
-
     };
 
     let  deleteTask = (id) =>{
@@ -40,10 +40,6 @@ export default function TodoList(){
     }
 
     
-
-
-
-
     return(
     
         <div className="todo">
